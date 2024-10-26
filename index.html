@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div class="card">
+        <div class="search-bar">
+            <input type="text" placeholder="search city">
+            <button>
+                <img src="images/search.png">
+            </button>
+        </div>
+        
+        <!-- loading-spinner -->
+        <div class="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+
+        <div>
+            <p class="error">City not found, please try again</p>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-img">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city-name">Hospate</h2>
+            <div class="details">
+                <div class="sub-details">
+                    <div class="col">
+                        <img src="images/humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png">
+                        <div>
+                            <p class="wind-speed">10 km/hr</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-details">
+                    <div class="col">
+                        <img src="images/sunrise.jpg">
+                        <div>
+                            <p class="sunrise">50%</p>
+                            <p>Sunrise</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/sunset.jpg">
+                        <div>
+                            <p class="sunset">10 km/hr</p>
+                            <p>Sunset</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-details">
+                    <div class="col">
+                        <img src="images/feels-like.jpg">
+                        <div>
+                            <p class="feels-like">50%</p>
+                            <p>Feels Like</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
