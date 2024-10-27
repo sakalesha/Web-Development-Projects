@@ -76,9 +76,6 @@ function updateFields(data) {
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind-speed").innerHTML = data.wind.speed + "km/hr";
-    document.querySelector(".sunrise").innerHTML = data.sys.sunrise;
-    document.querySelector(".sunset").innerHTML = data.sys.sunset;
-    document.querySelector(".feels-like").innerHTML = data.main.feels_like + "°C";
 
     if(data.weather[0].main == "Clear") {
         weatherIcon.src = "images/clear.png";
